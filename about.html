@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — HuGGeMs</title>
+<style>
+  :root { --primary: #1a6b8a; --primary-light: #2389a8; --accent: #27ae60; --bg: #f5f8fa; --card-bg: #fff; --text: #2c3e50; --text-light: #7f8c8d; --border: #e0e6ed; --radius: 8px; --shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  * { margin:0;padding:0;box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  .header { background:linear-gradient(135deg,#0a3d52,#145a7a,#1a6b8a); color:#fff; }
+  .header-main { display:flex;justify-content:space-between;align-items:center;padding:14px 32px;flex-wrap:wrap;gap:12px; }
+  .logo-area { display:flex;align-items:center;gap:12px; }
+  .logo-area a { text-decoration:none;color:inherit;display:flex;align-items:center;gap:12px; }
+  .logo-icon { width:40px;height:40px;background:rgba(255,255,255,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px; }
+  .logo-text h1 { font-size:18px; } .logo-text span { font-size:11px;color:rgba(255,255,255,0.7); }
+  .nav-links { display:flex;gap:2px;flex-wrap:wrap; }
+  .nav-links a { color:rgba(255,255,255,0.85);text-decoration:none;padding:7px 14px;border-radius:6px;font-size:13px;font-weight:500; }
+  .nav-links a:hover,.nav-links a.active { background:rgba(255,255,255,0.15);color:#fff; }
+  .container { max-width:800px;margin:0 auto;padding:0 24px; }
+  .page-title { margin:36px 0 24px;font-size:24px;color:var(--primary); }
+  .section { background:#fff;border-radius:var(--radius);padding:24px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,0.04); }
+  .section h2 { font-size:18px;color:var(--primary);margin-bottom:10px; }
+  .section p { font-size:14px;margin-bottom:8px; }
+  .footer { background:#0a3d52;color:rgba(255,255,255,0.6);text-align:center;padding:24px;font-size:12px;margin-top:48px; }
+  .footer a { color:rgba(255,255,255,0.8);text-decoration:none; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-main">
+    <div class="logo-area">
+      <a href="index.html"><div class="logo-icon">🧬</div><div class="logo-text"><h1>HuGGeMs</h1><span>Human Gut Microbial Gene Markers</span></div></a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="browse.html">Browse</a><a href="search.html">Search</a><a href="download.html">Download</a><a href="help.html">Help</a><a href="about.html" class="active">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <h1 class="page-title">About HuGGeMs</h1>
+
+  <div class="section">
+    <h2>Overview</h2>
+    <p>HuGGeMs (Human Gut Microbial Gene Markers) is a comprehensively curated resource designed for taxonomic profiling of human gut metagenomes, compatible with the MetaPhlAn4 framework. The database integrates 228,837 high-quality genomes (227,679 public + 1,158 newly isolated strains) into 11,376 species-level genome bins (SGBs), yielding 1.86 million unique marker genes.</p>
+    <p>Among the 1,158 newly sequenced isolates, 82 strains represent 41 previously undescribed or uncultured species, substantially expanding the diversity of human gut microbiota. Benchmarking using simulated metagenomes and synthetic communities demonstrated that HuGGeMs offers higher recall compared to existing mainstream reference databases, achieving a 48.6% increase in reads mapping rates over the default MetaPhlAn4 database across 7,646 real metagenomic samples.</p>
+  </div>
+
+  <div class="section">
+    <h2>Data Sources</h2>
+    <p>The database aggregates genomes from six major repositories:</p>
+    <p>• NCBI GenBank &nbsp; • UHGG v2.0.1 &nbsp; • hGMB &nbsp; • HumGut &nbsp; • GMrepo &nbsp; • CGR v2</p>
+    <p>Genome sequences of cultured isolates: <a href="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1458945">BioProject PRJNA1458945</a></p>
+    <p>Database files: <a href="https://zenodo.org/records/19601390">Zenodo</a></p>
+    <p>Source code: <a href="https://github.com/yulinwang605/HuGGems-code-source-data">GitHub</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Team</h2>
+    <p><strong>Corresponding Authors:</strong></p>
+    <p>Yulin Wang (wangyulin@sdu.edu.cn) — State Key Laboratory of Microbial Technology, Shandong University</p>
+    <p>Shuang-Jiang Liu (liusj@sdu.edu.cn) — Institute of Microbiology, CAS</p>
+    <p><strong>First Author:</strong> Chen Chen</p>
+    <p><strong>Contributing Authors:</strong> Xiaoqing Xu, Yuchen Liu, Xiaojia Han, Lin Cao, Shengkai Ma, Xiaoyang Zhu, Guozhong Chen, Yunxia Li, Yang Yan, Anqi Zhao, Xueyan Yang, Xiaorui Tian, Weizhuo Bao, Lu Wang, Yuzhi Zhao, Xinnan Du, Lan Yang, Ruiqi Wei, He Jiang, Tong Zhang</p>
+    <p><strong>Institutions:</strong> Shandong University · The University of Hong Kong · Chinese Academy of Sciences</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p>📧 Email: wangyulin@sdu.edu.cn</p>
+    <p>📧 Email: cc021210@126.com</p>
+    <p>💻 GitHub: <a href="https://github.com/R840chen/HuGGeMs-update-pipelines">R840chen/HuGGeMs-update-pipelines</a></p>
+  </div>
+
+  <div class="section">
+    <h2>Citation</h2>
+    <p>Chen C, Xu X, Liu Y, et al. Human Gut Microbial Genetic Markers (HuGGeMs) database, a comprehensively curated resource designed for taxonomic profiling of human gut metagenomes. <em>Nucleic Acids Research</em>, 2026 (submitted).</p>
+  </div>
+
+  <div class="section">
+    <h2>Acknowledgments</h2>
+    <p>This work was supported by:</p>
+    <p>• Key R&D Program of Shandong Province, China (2025CXGC010613)</p>
+    <p>• Taishan Young Scholars (tsqn202306029)</p>
+    <p>• State Key Laboratory of Microbial Diversity and Innovative Utilization (SQ2024SKL09028)</p>
+    <p>• SKLMT Frontiers and Challenges Project (SKLMTFCP-2023-01)</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2026 HuGGeMs Database · Shandong University · <a href="about.html">Contact</a> · <a href="https://github.com/R840chen/HuGGeMs-update-pipelines">GitHub</a></p>
+</footer>
+</body>
+</html>

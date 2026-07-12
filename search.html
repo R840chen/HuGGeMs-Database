@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search — HuGGeMs</title>
+<style>
+  :root { --primary: #1a6b8a; --primary-light: #2389a8; --accent: #27ae60; --bg: #f5f8fa; --card-bg: #fff; --text: #2c3e50; --text-light: #7f8c8d; --border: #e0e6ed; --radius: 8px; --shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  * { margin:0;padding:0;box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+  .header { background:linear-gradient(135deg,#0a3d52,#145a7a,#1a6b8a); color:#fff; }
+  .header-main { display:flex;justify-content:space-between;align-items:center;padding:14px 32px;flex-wrap:wrap;gap:12px; }
+  .logo-area { display:flex;align-items:center;gap:12px; }
+  .logo-area a { text-decoration:none;color:inherit;display:flex;align-items:center;gap:12px; }
+  .logo-icon { width:40px;height:40px;background:rgba(255,255,255,0.15);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px; }
+  .logo-text h1 { font-size:18px; } .logo-text span { font-size:11px;color:rgba(255,255,255,0.7); }
+  .nav-links { display:flex;gap:2px;flex-wrap:wrap; }
+  .nav-links a { color:rgba(255,255,255,0.85);text-decoration:none;padding:7px 14px;border-radius:6px;font-size:13px;font-weight:500; }
+  .nav-links a:hover,.nav-links a.active { background:rgba(255,255,255,0.15);color:#fff; }
+  .container { max-width:960px;margin:0 auto;padding:0 24px; }
+  .page-title { margin:36px 0 20px;font-size:24px;color:var(--primary); }
+
+  .search-area { background:#fff;padding:28px;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:24px; }
+  .search-row { display:flex;gap:12px;flex-wrap:wrap; }
+  .search-row input { flex:1;min-width:240px;padding:11px 16px;border:2px solid var(--border);border-radius:8px;font-size:15px;outline:none;transition:border 0.2s; }
+  .search-row input:focus { border-color:var(--primary-light); }
+  .search-row button { padding:11px 28px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer; }
+  .search-row button:hover { background:#219a52; }
+  .search-type { display:flex;gap:16px;margin-top:14px;flex-wrap:wrap; }
+  .search-type label { display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text-light);cursor:pointer; }
+  .result-header { display:flex;justify-content:space-between;align-items:center;margin-bottom:12px; }
+  .result-header h3 { font-size:16px;color:var(--primary); }
+
+  .table-wrap { overflow-x:auto;background:#fff;border-radius:var(--radius);box-shadow:0 1px 4px rgba(0,0,0,0.04); }
+  .data-table { width:100%;border-collapse:collapse;font-size:13px;min-width:600px; }
+  .data-table thead { background:var(--primary);color:#fff; }
+  .data-table th { padding:10px 14px;text-align:left;font-weight:600; }
+  .data-table td { padding:8px 14px;border-bottom:1px solid var(--border); }
+  .data-table tbody tr:hover { background:#f0f7fa; }
+  .empty-msg { text-align:center;padding:40px;color:var(--text-light);font-size:14px; }
+  .mono { font-family:'Courier New',monospace;font-size:12px;color:var(--primary); }
+  .footer { background:#0a3d52;color:rgba(255,255,255,0.6);text-align:center;padding:24px;font-size:12px;margin-top:48px; }
+  .footer a { color:rgba(255,255,255,0.8);text-decoration:none; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-main">
+    <div class="logo-area">
+      <a href="index.html"><div class="logo-icon">🧬</div><div class="logo-text"><h1>HuGGeMs</h1><span>Human Gut Microbial Gene Markers</span></div></a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="browse.html">Browse</a><a href="search.html" class="active">Search</a><a href="download.html">Download</a><a href="help.html">Help</a><a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <h1 class="page-title">Advanced Search</h1>
+
+  <div class="search-area">
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="Enter species name, SGB ID, genome ID, disease, NMDC accession..." value="">
+      <button onclick="doSearch()">🔍 Search</button>
+    </div>
+    <div class="search-type">
+      <label><input type="radio" name="searchType" value="all" checked> All fields</label>
+      <label><input type="radio" name="searchType" value="species_name"> Species</label>
+      <label><input type="radio" name="searchType" value="sgb_id"> SGB ID</label>
+      <label><input type="radio" name="searchType" value="disease"> Disease</label>
+      <label><input type="radio" name="searchType" value="taxonomy"> Taxonomy</label>
+    </div>
+  </div>
+
+  <div class="result-header">
+    <h3 id="resultTitle">Search Results</h3>
+    <span style="font-size:13px;color:var(--text-light);" id="resultCount"></span>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr><th>Category</th><th>Key Field</th><th>Details</th></tr>
+      </thead>
+      <tbody id="resultBody">
+        <tr><td colspan="3" class="empty-msg">Enter a query and click Search to find entries.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2026 HuGGeMs Database · Shandong University · <a href="about.html">Contact</a> · <a href="https://github.com/R840chen/HuGGeMs-update-pipelines">GitHub</a></p>
+</footer>
+
+<script src="data.js"></script>
+<script>
+// Read URL param
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get('q');
+  if (q) {
+    document.getElementById('searchInput').value = q;
+    doSearch();
+  }
+})();
+
+function doSearch() {
+  const query = document.getElementById('searchInput').value.trim().toLowerCase();
+  const searchType = document.querySelector('input[name="searchType"]:checked').value;
+  if (!query) return;
+
+  // Search across all datasets
+  const categories = [
+    { name: 'Species', data: DATA.species || [], keyField: 'species_name' },
+    { name: 'Core Genes', data: DATA.core_genes || [], keyField: 'sgb_id' },
+    { name: 'Novel Species', data: DATA.new_species || [], keyField: 'species_name' },
+    { name: 'Prevalence', data: DATA.novel_prevalence || [], keyField: 'taxonomy' },
+    { name: 'Disease Assoc', data: DATA.disease_assoc || [], keyField: 'species' },
+    { name: 'Cohorts', data: DATA.cohorts || [], keyField: 'project_id' },
+  ];
+
+  let results = [];
+  categories.forEach(cat => {
+    cat.data.forEach(item => {
+      const matches = Object.values(item).some(v => String(v).toLowerCase().includes(query));
+      if (matches) {
+        const keyVal = item[cat.keyField] || '';
+        const details = Object.entries(item)
+          .filter(([k]) => k !== cat.keyField)
+          .map(([k,v]) => k + ': ' + v)
+          .join('; ');
+        results.push({ category: cat.name, key: keyVal, details: details });
+      }
+    });
+  });
+
+  document.getElementById('resultTitle').textContent = 'Search Results';
+  document.getElementById('resultCount').textContent = results.length + ' entries';
+
+  const tbody = document.getElementById('resultBody');
+  if (!results.length) {
+    tbody.innerHTML = '<tr><td colspan="3" class="empty-msg">No results found for "' + escapeHTML(query) + '". Try a different keyword.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = results.slice(0, 200).map(r =>
+    '<tr>' +
+    '<td><span class="tag" style="display:inline-block;background:#e8f4f8;color:#1a6b8a;padding:1px 8px;border-radius:10px;font-size:11px;">' + r.category + '</span></td>' +
+    '<td class="mono">' + escapeHTML(r.key) + '</td>' +
+    '<td style="font-size:12px;color:#555;">' + escapeHTML(r.details.substring(0, 200)) + '</td>' +
+    '</tr>'
+  ).join('');
+}
+
+function escapeHTML(str) {
+  var div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+</script>
+</body>
+</html>

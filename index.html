@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HuGGeMs — Human Gut Microbial Gene Markers Database</title>
+<style>
+  :root {
+    --primary: #1a6b8a;
+    --primary-light: #2389a8;
+    --accent: #27ae60;
+    --bg: #f5f8fa;
+    --card-bg: #fff;
+    --text: #2c3e50;
+    --text-light: #7f8c8d;
+    --border: #e0e6ed;
+    --radius: 8px;
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  
+  /* Header */
+  .header { background: linear-gradient(135deg, #0a3d52 0%, #145a7a 50%, #1a6b8a 100%); color: #fff; padding: 0; }
+  .header-top { display: flex; justify-content: space-between; align-items: center; padding: 12px 40px; border-bottom: 1px solid rgba(255,255,255,0.12); font-size: 13px; color: rgba(255,255,255,0.7); }
+  .header-top a { color: rgba(255,255,255,0.85); text-decoration: none; }
+  .header-top a:hover { color: #fff; }
+  .header-main { display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; flex-wrap: wrap; gap: 16px; }
+  
+  .logo-area { display: flex; align-items: center; gap: 14px; }
+  .logo-icon { width: 48px; height: 48px; background: rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold; }
+  .logo-text h1 { font-size: 22px; font-weight: 700; letter-spacing: 0.5px; }
+  .logo-text span { font-size: 12px; color: rgba(255,255,255,0.7); display: block; margin-top: 1px; }
+  
+  .nav-links { display: flex; gap: 4px; flex-wrap: wrap; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; padding: 8px 18px; border-radius: 6px; font-size: 14px; font-weight: 500; transition: all 0.2s; }
+  .nav-links a:hover, .nav-links a.active { background: rgba(255,255,255,0.15); color: #fff; }
+  
+  /* Hero */
+  .hero { background: linear-gradient(135deg, #0e4d64 0%, #156584 60%, #1a7a9e 100%); color: #fff; padding: 48px 40px 56px; text-align: center; }
+  .hero h2 { font-size: 30px; font-weight: 700; margin-bottom: 12px; }
+  .hero p { font-size: 15px; color: rgba(255,255,255,0.8); max-width: 680px; margin: 0 auto 28px; line-height: 1.7; }
+  .search-box { display: flex; max-width: 620px; margin: 0 auto; gap: 0; }
+  .search-box input { flex: 1; padding: 13px 18px; border: none; border-radius: 8px 0 0 8px; font-size: 15px; outline: none; }
+  .search-box button { padding: 13px 26px; background: var(--accent); color: #fff; border: none; border-radius: 0 8px 8px 0; font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+  .search-box button:hover { background: #219a52; }
+  .search-hint { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 10px; }
+  .search-hint a { color: rgba(255,255,255,0.7); }
+  
+  /* Container */
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  
+  /* Stats */
+  .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: -28px auto 0; position: relative; z-index: 2; }
+  .stat-card { background: #fff; border-radius: var(--radius); padding: 24px 20px; text-align: center; box-shadow: var(--shadow); }
+  .stat-card .num { font-size: 32px; font-weight: 700; color: var(--primary); }
+  .stat-card .label { font-size: 13px; color: var(--text-light); margin-top: 4px; }
+  
+  /* Sections */
+  .section { margin: 48px auto; }
+  .section-title { font-size: 22px; font-weight: 700; color: var(--primary); margin-bottom: 6px; padding-bottom: 12px; border-bottom: 3px solid var(--primary); display: inline-block; }
+  
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; margin-top: 20px; }
+  .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+  .card h3 { font-size: 17px; margin-bottom: 10px; color: var(--primary); }
+  .card p { font-size: 14px; color: var(--text-light); line-height: 1.7; }
+  .card .card-link { display: inline-block; margin-top: 12px; color: var(--primary-light); font-weight: 600; font-size: 14px; text-decoration: none; }
+  .card .card-link:hover { text-decoration: underline; }
+  
+  /* Data browse */
+  .browse-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 20px; }
+  .browse-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; text-align: center; text-decoration: none; color: var(--text); transition: all 0.2s; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .browse-card:hover { box-shadow: var(--shadow); border-color: var(--primary-light); transform: translateY(-2px); }
+  .browse-card .icon { font-size: 36px; }
+  .browse-card .title { font-size: 16px; font-weight: 600; color: var(--primary); }
+  .browse-card .desc { font-size: 13px; color: var(--text-light); }
+  .browse-card .count { font-size: 12px; background: #e8f4f8; color: var(--primary); padding: 2px 10px; border-radius: 12px; }
+  
+  /* Table */
+  .data-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
+  .data-table thead { background: var(--primary); color: #fff; }
+  .data-table th { padding: 12px 14px; text-align: left; font-weight: 600; }
+  .data-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .data-table tbody tr:hover { background: #f0f7fa; }
+  
+  /* Footer */
+  .footer { background: #0a3d52; color: rgba(255,255,255,0.65); text-align: center; padding: 32px 24px; font-size: 13px; margin-top: 60px; }
+  .footer a { color: rgba(255,255,255,0.85); text-decoration: none; }
+  .footer a:hover { color: #fff; }
+  .footer .logos { display: flex; justify-content: center; gap: 30px; margin-bottom: 16px; flex-wrap: wrap; }
+  .footer .logos span { background: rgba(255,255,255,0.08); padding: 6px 16px; border-radius: 6px; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-main container">
+    <div class="logo-area">
+      <a href="index.html" style="text-decoration:none;color:inherit;display:flex;align-items:center;gap:14px;">
+        <div class="logo-icon">🧬</div>
+        <div class="logo-text">
+          <h1>HuGGeMs</h1>
+          <span>Human Gut Microbial Gene Markers</span>
+        </div>
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="search.html">Search</a>
+      <a href="download.html">Download</a>
+      <a href="help.html">Help</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <h2>HuGGeMs Database</h2>
+  <p>A comprehensively curated resource designed for taxonomic profiling of human gut metagenomes. Integrating 228,837 high-quality genomes, 11,376 species-level genome bins (SGBs), and 1.86 million unique marker genes, compatible with the MetaPhlAn4 framework.</p>
+  <div class="search-box">
+    <input type="text" id="quickSearch" placeholder="Search by species name, gene name, or NCBI accession..." onkeydown="if(event.key==='Enter')doSearch()">
+    <button onclick="doSearch()">🔍 Search</button>
+  </div>
+  <div class="search-hint">
+    Try: <a href="search.html?q=Bacteroides">Bacteroides</a> · 
+    <a href="search.html?q=Blautia">Blautia</a> · 
+    <a href="search.html?q=SGB_">SGB_60004</a>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="container stats-row">
+  <div class="stat-card">
+    <div class="num">228,837</div>
+    <div class="label">High-Quality Genomes</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">11,376</div>
+    <div class="label">Species-Level Genome Bins (SGBs)</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">1.86M</div>
+    <div class="label">Unique Marker Genes</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">1,158</div>
+    <div class="label">Newly Isolated Strains</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">41</div>
+    <div class="label">Putative Novel Species</div>
+  </div>
+</section>
+
+<!-- Browse Entries -->
+<section class="container section">
+  <h2 class="section-title">Browse by Category</h2>
+  <div class="browse-links">
+    <a href="browse.html?type=species" class="browse-card">
+      <div class="icon">🦠</div>
+      <div class="title">Browse by Species</div>
+      <div class="desc">11,376 species-level genome bins with taxonomy</div>
+      <div class="count">11,376 SGBs</div>
+    </a>
+    <a href="browse.html?type=core_genes" class="browse-card">
+      <div class="icon">🧬</div>
+      <div class="title">Core Genes</div>
+      <div class="desc">11.46M core genes across all SGBs</div>
+      <div class="count">11.46M genes</div>
+    </a>
+    <a href="browse.html?type=marker_genes" class="browse-card">
+      <div class="icon">🏷️</div>
+      <div class="title">Marker Genes</div>
+      <div class="desc">1.86M species-specific markers for MetaPhlAn4</div>
+      <div class="count">1.86M markers</div>
+    </a>
+    <a href="browse.html?type=new_species" class="browse-card">
+      <div class="icon">✨</div>
+      <div class="title">Novel Species</div>
+      <div class="desc">41 putative novel species from 82 newly isolated strains</div>
+      <div class="count">41 species</div>
+    </a>
+  </div>
+</section>
+
+<!-- Pipeline & Tools -->
+<section class="container section">
+  <h2 class="section-title">Pipeline &amp; Tools</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>🔄 HuGGeMs Pipeline</h3>
+      <p>An automated bioinformatics pipeline for updating the HuGGeMs database. Detect genome presence, select marker genes, and manage your microbial gene marker database.</p>
+      <a href="https://github.com/R840chen/HuGGeMs-update-pipelines" class="card-link">View on GitHub →</a>
+    </div>
+    <div class="card">
+      <h3>📊 Data Download</h3>
+      <p>Download complete datasets including core genes (.ffn), marker genes, functional annotations, and taxonomy metadata for offline analysis.</p>
+      <a href="download.html" class="card-link">Go to Download →</a>
+    </div>
+    <div class="card">
+      <h3>📖 Documentation</h3>
+      <p>Learn how to use the HuGGeMs database, understand the data format, and integrate it into your metagenomic analysis workflows.</p>
+      <a href="help.html" class="card-link">Read Documentation →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Recent Updates -->
+<section class="container section">
+  <h2 class="section-title">Recent Updates</h2>
+  <table class="data-table">
+    <thead>
+      <tr><th>Date</th><th>Update</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>2026-07</td><td>HuGGeMs database website launched; manuscript submitted to NAR</td></tr>
+      <tr><td>2026-05</td><td>1,158 newly isolated strain genomes integrated; 41 putative novel species identified</td></tr>
+      <tr><td>2026-03</td><td>11,376 SGBs defined; 1.86M marker genes curated</td></tr>
+      <tr><td>2025-12</td><td>228,837 high-quality genomes aggregated from 6 public repositories</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="logos">
+    <span>Shandong University</span>
+    <span>The University of Hong Kong</span>
+    <span>Chinese Academy of Sciences</span>
+  </div>
+  <p>© 2026 HuGGeMs Database. State Key Laboratory of Microbial Technology, Shandong University, Qingdao, China.</p>
+  <p style="margin-top:8px;"><a href="https://github.com/R840chen/HuGGeMs-update-pipelines">GitHub</a> &nbsp;|&nbsp; <a href="https://zenodo.org/records/19601390">Zenodo</a> &nbsp;|&nbsp; <a href="about.html">About</a></p>
+  <p style="margin-top:8px;color:rgba(255,255,255,0.4);">If you use HuGGeMs in your research, please cite: Chen et al., Nucleic Acids Research, 2026.</p>
+</footer>
+
+<script src="data.js"></script>
+<script>
+function doSearch() {
+  var q = document.getElementById('quickSearch').value.trim();
+  if (q) window.location.href = 'search.html?q=' + encodeURIComponent(q);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1516 @@
+{
+  "total_strains": 1158,
+  "novel_strain_count": 82,
+  "novel_species_count": 37,
+  "novel_species": [
+    {
+      "genome_id": "CC4",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 100.0,
+      "contamination": 0,
+      "genome_size": 4039085,
+      "n_contigs": 1,
+      "n50": 4039085,
+      "taxonomy": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes sp001941065",
+      "closest_species": "Alistipes montrealensis",
+      "similarity": 97.622,
+      "nmdc": "NMDC20594256"
+    },
+    {
+      "genome_id": "CM-HK",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 6227041,
+      "n_contigs": 11,
+      "n50": 5777969,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Clostridium;s__",
+      "closest_species": "Clostridium paraputrificum",
+      "similarity": 97.347,
+      "nmdc": "NMDC20594298"
+    },
+    {
+      "genome_id": "HA0154",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 100.0,
+      "contamination": 0,
+      "genome_size": 5201522,
+      "n_contigs": 13,
+      "n50": 631370,
+      "taxonomy": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides sp900760525",
+      "closest_species": "Parabacteroides merdae",
+      "similarity": 96.508,
+      "nmdc": "NMDC20594331"
+    },
+    {
+      "genome_id": "HA0583",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 3486953,
+      "n_contigs": 6,
+      "n50": 2210331,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Fimimorpha;s__",
+      "closest_species": "Konateibacter massiliensis",
+      "similarity": 93.495,
+      "nmdc": "NMDC20594359"
+    },
+    {
+      "genome_id": "HA1648",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 100.0,
+      "contamination": 0,
+      "genome_size": 5416742,
+      "n_contigs": 1,
+      "n50": 5416742,
+      "taxonomy": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides sp900760525",
+      "closest_species": "Parabacteroides johnsonii",
+      "similarity": 96.441,
+      "nmdc": "NMDC20594440"
+    },
+    {
+      "genome_id": "HA2366",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 1.72,
+      "genome_size": 4331478,
+      "n_contigs": 7,
+      "n50": 1320977,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp003471165",
+      "closest_species": "Blautia luti",
+      "similarity": 97.769,
+      "nmdc": "NMDC20594475"
+    },
+    {
+      "genome_id": "HA2651",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 1.72,
+      "genome_size": 2872374,
+      "n_contigs": 2,
+      "n50": 2854834,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Dysosmobacter;s__",
+      "closest_species": "Oscillibacter valericigenes",
+      "similarity": 96.272,
+      "nmdc": "NMDC20594538"
+    },
+    {
+      "genome_id": "HA2690",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 93.8,
+      "contamination": 1.72,
+      "genome_size": 2416812,
+      "n_contigs": 1,
+      "n50": 2416812,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Faecalimonas;s__Faecalimonas sp000209385",
+      "closest_species": "Gluceribacter canis",
+      "similarity": 97.629,
+      "nmdc": "NMDC20594541"
+    },
+    {
+      "genome_id": "HA2949",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 1.72,
+      "genome_size": 2630237,
+      "n_contigs": 2,
+      "n50": 2618200,
+      "taxonomy": "d__Bacteria;p__Fusobacteriota;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium_A;s__Fusobacterium_A sp900543175",
+      "closest_species": "Fusobacterium varium",
+      "similarity": 98.363,
+      "nmdc": "NMDC20594554"
+    },
+    {
+      "genome_id": "HA3187",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 4263305,
+      "n_contigs": 1,
+      "n50": 4263305,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__Emergencia;s__Emergencia sp900066695",
+      "closest_species": "Emergencia timonensis",
+      "similarity": 98.243,
+      "nmdc": "NMDC20594570"
+    },
+    {
+      "genome_id": "HA3652",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 3104271,
+      "n_contigs": 13,
+      "n50": 771116,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__YE71;s__YE71 sp000434695",
+      "closest_species": "Ruminococcus albus",
+      "similarity": 93.506,
+      "nmdc": "NMDC20594579"
+    },
+    {
+      "genome_id": "HA3661",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 3316965,
+      "n_contigs": 2,
+      "n50": 2458197,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Intestinimonas;s__",
+      "closest_species": "Intestinimonas timonensis",
+      "similarity": 96.992,
+      "nmdc": "NMDC20594583"
+    },
+    {
+      "genome_id": "HA4860",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 3534265,
+      "n_contigs": 2,
+      "n50": 3524159,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__Blautia sp944380235",
+      "closest_species": "Blautia argi",
+      "similarity": 95.046,
+      "nmdc": "NMDC20594671"
+    },
+    {
+      "genome_id": "HA5051",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 3155162,
+      "n_contigs": 3,
+      "n50": 2695208,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Anaeromassilibacillus;s__Anaeromassilibacillus sp001305115",
+      "closest_species": "Anaeromassilibacillus senegalensis",
+      "similarity": 97.295,
+      "nmdc": "NMDC20594681"
+    },
+    {
+      "genome_id": "HA5527",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 2880927,
+      "n_contigs": 1,
+      "n50": 2880927,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus_C;s__Ruminococcus_C sp000433635",
+      "closest_species": "Ruminococcus champanellensis",
+      "similarity": 94.385,
+      "nmdc": "NMDC20594705"
+    },
+    {
+      "genome_id": "HA5531",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 2685095,
+      "n_contigs": 1,
+      "n50": 2685095,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Anaerotignaceae;g__;s__",
+      "closest_species": "Anaerotignum aminivorans",
+      "similarity": 96.19,
+      "nmdc": "NMDC20594706"
+    },
+    {
+      "genome_id": "HA5536",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 1.72,
+      "genome_size": 3198902,
+      "n_contigs": 2,
+      "n50": 3184980,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__Pseudobutyricicoccus;s__Pseudobutyricicoccus sp003477405",
+      "closest_species": "Clostridium phoceensis",
+      "similarity": 91.872,
+      "nmdc": "NMDC20594709"
+    },
+    {
+      "genome_id": "HA5755",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 97.4,
+      "contamination": 1.72,
+      "genome_size": 4054149,
+      "n_contigs": 1,
+      "n50": 4054149,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Limivivens;s__Limivivens sp900066135",
+      "closest_species": "Robinsoniella peoriensis",
+      "similarity": 94.118,
+      "nmdc": "NMDC20594726"
+    },
+    {
+      "genome_id": "HA5831",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 1.72,
+      "genome_size": 4119906,
+      "n_contigs": 3,
+      "n50": 4094547,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Choladousia;s__Choladousia sp902363135",
+      "closest_species": "Roseburia hominis",
+      "similarity": 92.736,
+      "nmdc": "NMDC20594731"
+    },
+    {
+      "genome_id": "HA5880",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 96.6,
+      "contamination": 0,
+      "genome_size": 2863941,
+      "n_contigs": 1,
+      "n50": 2863941,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium;s__Ruthenibacterium sp018380115",
+      "closest_species": "Ruthenibacterium lactatiformans",
+      "similarity": 95.204,
+      "nmdc": "NMDC20594740"
+    },
+    {
+      "genome_id": "HA6011",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 1.72,
+      "genome_size": 2836183,
+      "n_contigs": 1,
+      "n50": 2836183,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Massiliimalia;s__Massiliimalia sp900752435",
+      "closest_species": "Massiliimalia timonensis",
+      "similarity": 94.865,
+      "nmdc": "NMDC20594744"
+    },
+    {
+      "genome_id": "HA6090-2",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 5.17,
+      "genome_size": 2718349,
+      "n_contigs": 1,
+      "n50": 2718349,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_G;s__Eubacterium_G sp000435815",
+      "closest_species": "Eubacterium ventriosum",
+      "similarity": 96.048,
+      "nmdc": "NMDC20594756"
+    },
+    {
+      "genome_id": "HA6102",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 1.72,
+      "genome_size": 3004420,
+      "n_contigs": 2,
+      "n50": 2992548,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__;s__",
+      "closest_species": "Anaerostipes hadrus",
+      "similarity": 93.225,
+      "nmdc": "NMDC20594761"
+    },
+    {
+      "genome_id": "HA6220",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 2612061,
+      "n_contigs": 1,
+      "n50": 2612061,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__Acutalibacter sp900548545",
+      "closest_species": "Neglectibacter timonensis",
+      "similarity": 96.008,
+      "nmdc": "NMDC20594772"
+    },
+    {
+      "genome_id": "HA6221",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 1.72,
+      "genome_size": 6204058,
+      "n_contigs": 1,
+      "n50": 6204058,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CHH4-2;s__CHH4-2 sp018378255",
+      "closest_species": "Clostridium transplantifaecale",
+      "similarity": 94.306,
+      "nmdc": "NMDC20594773"
+    },
+    {
+      "genome_id": "HA6703",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 1.72,
+      "genome_size": 3153923,
+      "n_contigs": 1,
+      "n50": 3153923,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia_A;s__Blautia_A sp937880195",
+      "closest_species": "Blautia glucerasea",
+      "similarity": 98.656,
+      "nmdc": "NMDC20594810"
+    },
+    {
+      "genome_id": "HA6865",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0.86,
+      "genome_size": 4249582,
+      "n_contigs": 2,
+      "n50": 4204558,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__Hominibacterium;s__",
+      "closest_species": "Hominibacterium faecale",
+      "similarity": 93.956,
+      "nmdc": "NMDC20594818"
+    },
+    {
+      "genome_id": "HA7031",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 100.0,
+      "contamination": 0,
+      "genome_size": 5342733,
+      "n_contigs": 3,
+      "n50": 5235916,
+      "taxonomy": "d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__Tannerellaceae;g__Parabacteroides;s__Parabacteroides sp019417325",
+      "closest_species": "Parabacteroides chongii",
+      "similarity": 96.318,
+      "nmdc": "NMDC20594829"
+    },
+    {
+      "genome_id": "HA7094",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 100.0,
+      "contamination": 0.86,
+      "genome_size": 3100320,
+      "n_contigs": 10,
+      "n50": 2699715,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Faecalimicrobium;s__",
+      "closest_species": "Romboutsia hominis",
+      "similarity": 97.451,
+      "nmdc": "NMDC20594832"
+    },
+    {
+      "genome_id": "HA7225",
+      "seq_method": "ONT",
+      "novel": "yes",
+      "completeness": 98.3,
+      "contamination": 0,
+      "genome_size": 3252906,
+      "n_contigs": 2,
+      "n50": 3226734,
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Soleaferrea;s__",
+      "closest_species": "Massilioclostridium coli",
+      "similarity": 91.837,
+      "nmdc": "NMDC20594838"
+    }
+  ],
+  "sample_species": [
+    {
+      "gca": "GCA_945883615.1",
+      "species": "Bordetella parapertussis",
+      "taxid": "519",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50005",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000195695.1",
+      "species": "Bordetella parapertussis 12822",
+      "taxid": "519",
+      "validly_published": "yes",
+      "sgb_id": "SGB_69292",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000317935.1",
+      "species": "Bordetella parapertussis Bpp5",
+      "taxid": "519",
+      "validly_published": "yes",
+      "sgb_id": "SGB_69292",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000027325.1",
+      "species": "Mycoplasmoides genitalium G37",
+      "taxid": "2097",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50014",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000292405.1",
+      "species": "Mycoplasmoides genitalium M2321",
+      "taxid": "2097",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50014",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000292445.1",
+      "species": "Mycoplasmoides genitalium M6282",
+      "taxid": "2097",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50014",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000292485.1",
+      "species": "Mycoplasmoides genitalium M6320",
+      "taxid": "2097",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50014",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000292505.1",
+      "species": "Mycoplasmoides genitalium M2288",
+      "taxid": "2097",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50014",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_036689675.1",
+      "species": "Mycoplasmoides genitalium",
+      "taxid": "2097",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50014",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000027345.1",
+      "species": "Mycoplasmoides pneumoniae M129",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000143945.1",
+      "species": "Mycoplasmoides pneumoniae FH",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000283755.1",
+      "species": "Mycoplasmoides pneumoniae 309",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000319655.2",
+      "species": "Mycoplasmoides pneumoniae PO1",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000319675.2",
+      "species": "Mycoplasmoides pneumoniae PI 1428",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000331085.2",
+      "species": "Mycoplasmoides pneumoniae M129-B7",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000387745.2",
+      "species": "Mycoplasmoides pneumoniae 19294",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272715.1",
+      "species": "Mycoplasmoides pneumoniae 39443",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272735.1",
+      "species": "Mycoplasmoides pneumoniae 51494",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272755.1",
+      "species": "Mycoplasmoides pneumoniae 54089",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272775.1",
+      "species": "Mycoplasmoides pneumoniae 54524",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272795.1",
+      "species": "Mycoplasmoides pneumoniae 85084",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272815.1",
+      "species": "Mycoplasmoides pneumoniae 85138",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272855.1",
+      "species": "Mycoplasmoides pneumoniae M1139",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272875.1",
+      "species": "Mycoplasmoides pneumoniae",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272895.1",
+      "species": "Mycoplasmoides pneumoniae M2592",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_001272915.1",
+      "species": "Mycoplasmoides pneumoniae MAC",
+      "taxid": "2104",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50015",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000006685.1",
+      "species": "Chlamydia muridarum str. Nigg",
+      "taxid": "83560",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50018",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000174995.1",
+      "species": "Chlamydia muridarum str. Weiss",
+      "taxid": "83560",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50018",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000175535.1",
+      "species": "Chlamydia muridarum MopnTet14",
+      "taxid": "83560",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50018",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000700845.1",
+      "species": "Chlamydia muridarum",
+      "taxid": "83560",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50018",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000709455.1",
+      "species": "Chlamydia muridarum str. Nigg 2 MCR",
+      "taxid": "83560",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50018",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000830945.1",
+      "species": "Chlamydia muridarum str. Nigg3 CMUT3-5",
+      "taxid": "83560",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50018",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000830965.1",
+      "species": "Chlamydia muridarum str. Nigg CM972",
+      "taxid": "83560",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50018",
+      "multi_sgb": "no"
+    },
+    {
+      "gca": "GCA_000008725.1",
+      "species": "Chlamydia trachomatis D/UW-3/CX",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000012125.1",
+      "species": "Chlamydia trachomatis A/HAR-13",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000026905.1",
+      "species": "Chlamydia trachomatis B/TZ1A828/OT",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000026925.1",
+      "species": "Chlamydia trachomatis B/Jali20/OT",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000068525.2",
+      "species": "Chlamydia trachomatis L2b/UCH-1/proctitis",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000068585.1",
+      "species": "Chlamydia trachomatis L2/434/Bu",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000092485.1",
+      "species": "Chlamydia trachomatis D-EC",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000092665.1",
+      "species": "Chlamydia trachomatis E/150",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000092685.1",
+      "species": "Chlamydia trachomatis G/9768",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000092705.1",
+      "species": "Chlamydia trachomatis G/11222",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000092725.1",
+      "species": "Chlamydia trachomatis G/11074",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000092745.1",
+      "species": "Chlamydia trachomatis E/11023",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000092805.1",
+      "species": "Chlamydia trachomatis G/9301",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000093005.1",
+      "species": "Chlamydia trachomatis D-LC",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000173475.1",
+      "species": "Chlamydia trachomatis 6276",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000173495.1",
+      "species": "Chlamydia trachomatis 6276s",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    },
+    {
+      "gca": "GCA_000173515.1",
+      "species": "Chlamydia trachomatis 70",
+      "taxid": "813",
+      "validly_published": "yes",
+      "sgb_id": "SGB_50019",
+      "multi_sgb": "yes"
+    }
+  ],
+  "marker_sample": [
+    {
+      "sgb_id": "SGB_50001",
+      "core_genes": 460,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60004",
+      "core_genes": 1004,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60013",
+      "core_genes": 722,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60032",
+      "core_genes": 32,
+      "marker_genes": 32
+    },
+    {
+      "sgb_id": "SGB_60039",
+      "core_genes": 1356,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60049",
+      "core_genes": 1307,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60052",
+      "core_genes": 185,
+      "marker_genes": 184
+    },
+    {
+      "sgb_id": "SGB_60059",
+      "core_genes": 2250,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60060",
+      "core_genes": 800,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60065",
+      "core_genes": 1658,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60068",
+      "core_genes": 1514,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_51010",
+      "core_genes": 2276,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_51013",
+      "core_genes": 1554,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60144",
+      "core_genes": 110,
+      "marker_genes": 109
+    },
+    {
+      "sgb_id": "SGB_60145",
+      "core_genes": 153,
+      "marker_genes": 147
+    },
+    {
+      "sgb_id": "SGB_60146",
+      "core_genes": 914,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60148",
+      "core_genes": 857,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60151",
+      "core_genes": 37,
+      "marker_genes": 37
+    },
+    {
+      "sgb_id": "SGB_60156",
+      "core_genes": 431,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60157",
+      "core_genes": 172,
+      "marker_genes": 172
+    },
+    {
+      "sgb_id": "SGB_60161",
+      "core_genes": 649,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60163",
+      "core_genes": 697,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60164",
+      "core_genes": 184,
+      "marker_genes": 182
+    },
+    {
+      "sgb_id": "SGB_60165",
+      "core_genes": 232,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60170",
+      "core_genes": 909,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60176",
+      "core_genes": 798,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60177",
+      "core_genes": 621,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60178",
+      "core_genes": 1034,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60188",
+      "core_genes": 1098,
+      "marker_genes": 200
+    },
+    {
+      "sgb_id": "SGB_60189",
+      "core_genes": 167,
+      "marker_genes": 165
+    }
+  ],
+  "cohorts": [
+    {
+      "project_id": "PRJDB4176",
+      "disease": "D015179",
+      "country": "Japan",
+      "sample_count": 645
+    },
+    {
+      "project_id": "PRJEB2054",
+      "disease": "D006262",
+      "country": "Denmark",
+      "sample_count": 198
+    },
+    {
+      "project_id": "PRJEB10878",
+      "disease": "D015179",
+      "country": "China",
+      "sample_count": 125
+    },
+    {
+      "project_id": "PRJEB11532",
+      "disease": "D006262",
+      "country": "na",
+      "sample_count": 1178
+    },
+    {
+      "project_id": "PRJEB12123",
+      "disease": "D009765",
+      "country": "China",
+      "sample_count": 215
+    },
+    {
+      "project_id": "PRJEB12357",
+      "disease": "D009765",
+      "country": "Netherlands",
+      "sample_count": 215
+    },
+    {
+      "project_id": "PRJEB15371",
+      "disease": "D003424",
+      "country": "China",
+      "sample_count": 88
+    },
+    {
+      "project_id": "PRJEB14215",
+      "disease": "D009765",
+      "country": "Spain",
+      "sample_count": 4
+    },
+    {
+      "project_id": "PRJEB17784",
+      "disease": "D006262",
+      "country": "Germany",
+      "sample_count": 62
+    },
+    {
+      "project_id": "PRJEB21528",
+      "disease": "D006262",
+      "country": "China",
+      "sample_count": 138
+    },
+    {
+      "project_id": "PRJEB1220",
+      "disease": "D006262",
+      "country": "Denmark",
+      "sample_count": 348
+    },
+    {
+      "project_id": "PRJEB1786",
+      "disease": "D006262",
+      "country": "Sweden",
+      "sample_count": 137
+    },
+    {
+      "project_id": "PRJEB23052",
+      "disease": "D006262",
+      "country": "China",
+      "sample_count": 30
+    },
+    {
+      "project_id": "PRJEB27928",
+      "disease": "D006262",
+      "country": "Germany",
+      "sample_count": 130
+    },
+    {
+      "project_id": "PRJEB28545",
+      "disease": "D006262",
+      "country": "China",
+      "sample_count": 37
+    },
+    {
+      "project_id": "PRJEB4336",
+      "disease": "D050177",
+      "country": "Denmark",
+      "sample_count": 332
+    },
+    {
+      "project_id": "PRJEB6092",
+      "disease": "D006262",
+      "country": "Australia",
+      "sample_count": 24
+    },
+    {
+      "project_id": "PRJEB6997",
+      "disease": "D001172",
+      "country": "China",
+      "sample_count": 356
+    },
+    {
+      "project_id": "PRJEB7774",
+      "disease": "D015179",
+      "country": "Austria",
+      "sample_count": 156
+    },
+    {
+      "project_id": "PRJEB7949",
+      "disease": "D006262",
+      "country": "United Kingdom of Great Britain and Northern Irela",
+      "sample_count": 33
+    },
+    {
+      "project_id": "PRJNA237362",
+      "disease": "D003424",
+      "country": "United States of America",
+      "sample_count": 19
+    },
+    {
+      "project_id": "PRJNA422434",
+      "disease": "D003924",
+      "country": "China",
+      "sample_count": 370
+    },
+    {
+      "project_id": "PRJNA285502",
+      "disease": "D003093",
+      "country": "United States of America",
+      "sample_count": 46
+    },
+    {
+      "project_id": "SRP057027",
+      "disease": "D003424",
+      "country": "na",
+      "sample_count": 357
+    },
+    {
+      "project_id": "PRJNA290729",
+      "disease": "D009765",
+      "country": "Germany",
+      "sample_count": 14
+    },
+    {
+      "project_id": "PRJNA298489",
+      "disease": "D006262",
+      "country": "Spain",
+      "sample_count": 30
+    },
+    {
+      "project_id": "PRJNA299502",
+      "disease": "D003924",
+      "country": "United States of America",
+      "sample_count": 19
+    },
+    {
+      "project_id": "PRJNA289586",
+      "disease": "D006262",
+      "country": "Luxembourg",
+      "sample_count": 71
+    },
+    {
+      "project_id": "PRJNA356102",
+      "disease": "D006262",
+      "country": "China",
+      "sample_count": 63
+    },
+    {
+      "project_id": "PRJNA375935",
+      "disease": "D013167",
+      "country": "China",
+      "sample_count": 118
+    },
+    {
+      "project_id": "PRJNA385949",
+      "disease": "D015212",
+      "country": "United States of America",
+      "sample_count": 28
+    },
+    {
+      "project_id": "PRJNA388263",
+      "disease": "D006262",
+      "country": "United States of America",
+      "sample_count": 32
+    },
+    {
+      "project_id": "PRJNA398089",
+      "disease": "D035061",
+      "country": "United States of America",
+      "sample_count": 1205
+    },
+    {
+      "project_id": "PRJNA389280",
+      "disease": "D003424",
+      "country": "The United States of America",
+      "sample_count": 362
+    },
+    {
+      "project_id": "PRJNA400072",
+      "disease": "D003093",
+      "country": "Netherlands",
+      "sample_count": 213
+    },
+    {
+      "project_id": "PRJNA447983",
+      "disease": "D015179",
+      "country": "Italy",
+      "sample_count": 140
+    },
+    {
+      "project_id": "PRJNA215106",
+      "disease": "D006262",
+      "country": "United States of America",
+      "sample_count": 3
+    },
+    {
+      "project_id": "PRJEB12124",
+      "disease": "na",
+      "country": "China",
+      "sample_count": 105
+    }
+  ],
+  "total_samples": 7646,
+  "novel_prevalence": [
+    {
+      "sgb_id": "SGB_62334",
+      "prevalence": 0.2272,
+      "mean_abundance": 0.4336,
+      "genome_id": "HA5527",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruminococcus_C;s__Ruminococcus_C sp000433635"
+    },
+    {
+      "sgb_id": "SGB_62714",
+      "prevalence": 0.0009,
+      "mean_abundance": 0.0012,
+      "genome_id": "HA7225",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Soleaferrea;s__"
+    },
+    {
+      "sgb_id": "SGB_63056",
+      "prevalence": 0.1504,
+      "mean_abundance": 0.0422,
+      "genome_id": "HA6220",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__Acutalibacter;s__Acutalibacter sp900548545"
+    },
+    {
+      "sgb_id": "SGB_63151",
+      "prevalence": 0.1266,
+      "mean_abundance": 0.0517,
+      "genome_id": "HA5880",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium;s__Ruthenibacterium sp018380115"
+    },
+    {
+      "sgb_id": "SGB_63221",
+      "prevalence": 0.1713,
+      "mean_abundance": 0.0369,
+      "genome_id": "HA5536",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Butyricicoccaceae;g__Pseudobutyricicoccus;s__Pseudobutyricicoccus sp003477405"
+    },
+    {
+      "sgb_id": "SGB_63271",
+      "prevalence": 0.1907,
+      "mean_abundance": 0.1326,
+      "genome_id": "HA8121",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Faecousia;s__Faecousia sp000435995"
+    },
+    {
+      "sgb_id": "SGB_63658",
+      "prevalence": 0.2518,
+      "mean_abundance": 0.323,
+      "genome_id": "ZSW3",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Lawsonibacter;s__Lawsonibacter sp900066825"
+    },
+    {
+      "sgb_id": "SGB_63725",
+      "prevalence": 0.1197,
+      "mean_abundance": 0.0102,
+      "genome_id": "HA3661",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Oscillospiraceae;g__Intestinimonas;s__"
+    },
+    {
+      "sgb_id": "SGB_64402",
+      "prevalence": 0.2421,
+      "mean_abundance": 0.1599,
+      "genome_id": "HA6090-2",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Eubacterium_G;s__Eubacterium_G sp000435815"
+    },
+    {
+      "sgb_id": "SGB_64522",
+      "prevalence": 0.1121,
+      "mean_abundance": 0.004,
+      "genome_id": "HA7319",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Mediterraneibacter;s__"
+    },
+    {
+      "sgb_id": "SGB_65322",
+      "prevalence": 0.3017,
+      "mean_abundance": 0.0309,
+      "genome_id": "HA5755",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Limivivens;s__Limivivens sp900066135"
+    },
+    {
+      "sgb_id": "SGB_65325",
+      "prevalence": 0.5103,
+      "mean_abundance": 0.0417,
+      "genome_id": "HA5831",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Choladousia;s__Choladousia sp902363135"
+    },
+    {
+      "sgb_id": "SGB_65377",
+      "prevalence": 0.12,
+      "mean_abundance": 0.0087,
+      "genome_id": "HA5841",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Pseudolachnospira;s__Pseudolachnospira sp022867805"
+    },
+    {
+      "sgb_id": "SGB_68205",
+      "prevalence": 0.0005,
+      "mean_abundance": 0.0138,
+      "genome_id": "HA0583",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Fimimorpha;s__"
+    },
+    {
+      "sgb_id": "SGB_68270",
+      "prevalence": 0.0015,
+      "mean_abundance": 0.0159,
+      "genome_id": "HA6865",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__Hominibacterium;s__"
+    },
+    {
+      "sgb_id": "SGB_68433",
+      "prevalence": 0.0011,
+      "mean_abundance": 0.0055,
+      "genome_id": "HA7094",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Peptostreptococcales;f__Peptostreptococcaceae;g__Faecalimicrobium;s__"
+    },
+    {
+      "sgb_id": "SGB_70087",
+      "prevalence": 0.0021,
+      "mean_abundance": 0.5093,
+      "genome_id": "HA6011",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Massiliimalia;s__Massiliimalia sp900752435"
+    },
+    {
+      "sgb_id": "SGB_70091",
+      "prevalence": 0.1355,
+      "mean_abundance": 0.0075,
+      "genome_id": "HA6927",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Oscillospirales;f__Ruminococcaceae;g__Ruthenibacterium;s__Ruthenibacterium sp944388395"
+    },
+    {
+      "sgb_id": "SGB_70095",
+      "prevalence": 0.0115,
+      "mean_abundance": 0.0468,
+      "genome_id": "HA4860",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__Blautia;s__Blautia sp944380235"
+    },
+    {
+      "sgb_id": "SGB_70104",
+      "prevalence": 0.0198,
+      "mean_abundance": 0.0156,
+      "genome_id": "HA6221",
+      "taxonomy": "d__Bacteria;p__Bacillota_A;c__Clostridia;o__Lachnospirales;f__Lachnospiraceae;g__CHH4-2;s__CHH4-2 sp018378255"
+    }
+  ],
+  "disease_assoc": [
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Fusicatenibacter_saccharivorans",
+      "model": "abundance",
+      "coef": -5.4171,
+      "qval": 1.21191973754264e-05
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "uncultured_Oscillibacter_sp.",
+      "model": "abundance",
+      "coef": 4.833,
+      "qval": 0.000908749478883
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Anaerobutyricum_hallii",
+      "model": "abundance",
+      "coef": -5.1357,
+      "qval": 0.0015542700711505
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Eubacterium_ramulus",
+      "model": "abundance",
+      "coef": 4.7337,
+      "qval": 0.0028247664871493
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Butyricicoccus_faecihominis",
+      "model": "abundance",
+      "coef": 2.4601,
+      "qval": 0.0032898375124569
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Ruminococcus_bovis",
+      "model": "abundance",
+      "coef": -5.8311,
+      "qval": 0.0043524880949239
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "uncultured_Lachnoclostridium_sp.",
+      "model": "abundance",
+      "coef": 5.8473,
+      "qval": 0.0043524880949239
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Dialister_hominis",
+      "model": "abundance",
+      "coef": -10.3954,
+      "qval": 0.0085956822715487
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Escherichia_coli",
+      "model": "abundance",
+      "coef": 4.967,
+      "qval": 0.0085504952784202
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Sutterella_wadsworthensis",
+      "model": "abundance",
+      "coef": -8.0826,
+      "qval": 0.0147886664426355
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "[Collinsella]_massiliensis",
+      "model": "abundance",
+      "coef": 9.2528,
+      "qval": 0.0105372613178871
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Flavonifractor_plautii",
+      "model": "abundance",
+      "coef": 4.5328,
+      "qval": 0.0105372613178871
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Phocaeicola_vulgatus",
+      "model": "abundance",
+      "coef": -4.2914,
+      "qval": 0.0105372613178871
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "[Clostridium]_leptum",
+      "model": "abundance",
+      "coef": 4.6375,
+      "qval": 0.0323243744132613
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Anaerobutyricum_soehngenii",
+      "model": "prevalence",
+      "coef": -4.1843,
+      "qval": 0.0323243744132613
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Anthropogastromicrobium_aceti",
+      "model": "prevalence",
+      "coef": -4.1843,
+      "qval": 0.0323243744132613
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Clostridiales_bacterium",
+      "model": "prevalence",
+      "coef": -4.1843,
+      "qval": 0.0323243744132613
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Hominiventricola_filiformis",
+      "model": "prevalence",
+      "coef": -4.1843,
+      "qval": 0.0323243744132613
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Wansuia_hejianensis",
+      "model": "abundance",
+      "coef": 2.4025,
+      "qval": 0.0346183840143689
+    },
+    {
+      "disease": "Type 2 diabetes",
+      "project": "PRJNA289586",
+      "species": "Gallintestinimicrobium_propionicum",
+      "model": "abundance",
+      "coef": -4.6923,
+      "qval": 0.0323243744132613
+    }
+  ]
+}
